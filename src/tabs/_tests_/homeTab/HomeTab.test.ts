@@ -27,6 +27,6 @@ describe('HomeTab with localStorage not empty', () => {
     expect(mockCommit).toHaveBeenCalledWith('getLocalUser')
   })
   test('shows title', () => {
-    console.log(wrapper.text())
+    expect(wrapper.text()).toContain('Page d\'accueil')
   })
 })
