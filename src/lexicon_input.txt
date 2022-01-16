@@ -1,0 +1,1 @@
+cardID;fonWriting;frenchWriting;nextReview
