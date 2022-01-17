@@ -14,7 +14,7 @@ jest.mock('vuex', () => ({
 localStorage.setItem('user', 'anything')
 localStorage.setItem('cards', 'anything')
 
-describe('HomeTab with localStorage not empty', () => {
+describe('HomeTab.vue with localStorage not empty', () => {
   const wrapper = mount(HomeTab as any)
   test('mounts', () => {
     expect(wrapper.exists()).toBe(true)

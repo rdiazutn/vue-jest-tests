@@ -1,6 +1,7 @@
 
 import HomeTab from '@/tabs/HomeTab.vue'
 import { mount } from '@vue/test-utils'
+
 const mockDispatch = jest.fn(() => Promise.resolve(true))
 const mockCommit = jest.fn(() => Promise.resolve(true))
 jest.mock('vuex', () => ({
@@ -10,8 +11,9 @@ jest.mock('vuex', () => ({
     state: {}
   })
 }))
+
 localStorage.clear()
-describe('HomeTab with localStorage empty', () => {
+describe('HomeTab.vue with localStorage empty', () => {
   
   const wrapper = mount(HomeTab as any)
   test('mounts', () => {
@@ -27,3 +29,4 @@ describe('HomeTab with localStorage empty', () => {
     expect(mockCommit).not.toHaveBeenCalledWith('getLocalUser')
   })
 })
+
