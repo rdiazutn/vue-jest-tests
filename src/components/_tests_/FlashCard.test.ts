@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import FlashCard from '../FlashCard.vue'
+import FlashCard from '@/components/FlashCard.vue'
 
 const mockDispatch = jest.fn(() => Promise.resolve(true))
 const mockCommit = jest.fn(() => Promise.resolve(true))
